@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Мой новый сайт</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css" integrity="sha384-zIaWifL2YFF1qaDiAo0JFgsmasocJ/rqu7LKYH8CoBEXqGbb9eO+Xi3s6fQhgFWM" crossorigin="anonymous">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-window-close"> onclick="hideMenu()"</i>
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">COURSE</a></li>
+                    <li><a href="">BLOG</a></li>
+                    <li><a href="">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+
+    <div class="text-box">
+        <h1>Будущий университет мира</h1>
+        <p>Making website now is one of the easiest thing in the world. You just need to learn HTML, CSS,<br> Javascript and you are good to go</p>
+        <a href="" class="hero-btn">Посетите нас, чтобы узнать больше</a>
+    </div>
+        
+
+    </section>
+
+<!--------- Course ----------->
+
+<section class="course">
+    <h1>Курсы, которые мы предлагаем</h1>
+    <p>Компьютерные науки и инженерия.</p>
+
+    <div class="row">
+        <div class="course-col">
+            <h3>преддипломная практика</h3>
+            <p>Computer science is the study of computers and computing as well as their theoretical and practical applications</p>
+        </div>
+        <div class="course-col">
+            <h3>Степень</h3>
+            <p>Computer science is the study of computers and computing as well as their theoretical and practical applications</p>
+        </div>
+        <div class="course-col">
+            <h3>Последипломное образование</h3>
+            <p>Computer science is the study of computers and computing as well as their theoretical and practical applications</p>
+        </div>
+    </div>
+
+</section>
+
+<!-----campus--------->
+<section class="campus">
+    <h1>Университетский кампус будущего мира</h1>
+    <p>World`s Future University has three Main Campuses; in MOSCOW, St. PETERSBURG and ROSTOV</p>
+    <div class="row">
+        <div class="campus-col">
+            <img src="images/london.png">
+            <div class="layer">
+                <h3>МОСКВА</h3>
+            </div>
+        </div>
+        <div class="campus-col">
+            <img src="images/newyork.png">
+            <div class="layer">
+                <h3>САНКТ-ПЕТЕРБУРГ</h3>
+            </div>
+        </div>
+        <div class="campus-col">
+            <img src="images/washington.png">
+            <div class="layer">
+                <h3>РОСТОВ</h3>
+            </div>
+        </div>
+    </div>
+
+
+
+</section>
+
+<!-----Facilities-------->
+<section class="facilities">
+    <h1>Наши объекты</h1>
+    <p>Here are our facilities</p>
+    <div class="row">
+        <div class="facilities-col">
+            <img src="images/library.png">
+            <h3>Библиотека мирового класса</h3>
+            <p> Peter the great library of curiosity in st perterburg</p>
+        </div>
+        <div class="facilities-col">
+            <img src="images/basketball.png">
+            <h3>Лучшая баскетбольная площадка </h3>
+            <p> Big Shaq and Mickael Jordan Basketball court in Moscow</p>
+        </div>
+        <div class="facilities-col">
+            <img src="images/cafeteria.png">
+            <h3>Вкусная и здоровая еда</h3>
+            <p> Yummy, delicious, fantatic and healthy foodie resturant at Rostov</p>
+        </div>
+    </div>
+
+
+</section>
+
+<!-------testimonials------>
+
+<section class="testimonials">
+    <h1>Что говорят наши студенты</h1>
+    <p>Our students believe this is the World`s future University.</p>
+
+    <div class="row">
+        <div class="testimonial-col">
+            <img src="images/user1.jpg">
+            <div>
+                <p>Yeah this is the world`s first future university, I like it</p>
+                <h3>Maryam Love</h3>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+                
+            
+        </div>
+        <div class="testimonial-col">
+            <img src="images/user2.jpg">
+            <div>
+                <p>Yeah this is the world`s first future university, I like it</p>
+                <h3>Makzy Don</h3>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+            </div>
+        </div>
+    </div>
+
+
+</section>
+
+<!------- Call to Action ------->
+<section class="cta">
+    <h1>Запишитесь на наши различные онлайн-курсы<br>везде из мира</h1>
+    <a href="" class="hero-btn">Свяжитесь с нами</a>
+
+
+</section>
+
+
+
+
+<!-----------JavaScript for Toggle Menu------------->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+    <!------ footer----->
+<section class="footer">
+    <h4>О нас</h4>
+    <p>This website is all about the future university of the world.</p>
+    <div class="icons">
+        <i class="fa fa-facebook-official"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+    </div>
+    <p>Сделано<i class="fa fa-facebook-official"></i> Ибрахим Баро Йиди</p>
+    <a class="social-icon" href="https://vk.com/al_im.php?v=" target="_blank">
+        <ion-icon name="logo-vk"></ion-icon>
+
+    </a>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</section>
+
+
+
+</body>
+</html>
